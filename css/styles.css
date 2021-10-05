@@ -176,6 +176,9 @@ li {
   height: 40px;
   background-size: contain;
 }
+.button.is-primary.is-alt {
+  width: 80%;
+}
 
 /* Focus */
 
@@ -292,7 +295,7 @@ input.is-success, .textarea.is-success {
     border-right: 1px solid white;
     border-bottom: 1px solid white;
     border-bottom-right-radius: 8px;
-    background: #BF1722;
+    background: #1C51A6;
     -webkit-transition: top 1s ease-out;
     transition: top 1s ease-out;
     z-index: 100;
