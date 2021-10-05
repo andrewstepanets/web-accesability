@@ -296,7 +296,6 @@ input.is-success, .textarea.is-success {
     border-bottom: 1px solid white;
     border-bottom-right-radius: 8px;
     background: #1C51A6;
-    -webkit-transition: top 1s ease-out;
     transition: top 1s ease-out;
     z-index: 100;
 }
@@ -307,6 +306,12 @@ input.is-success, .textarea.is-success {
     top: 0px;
     outline-color: transparent;
     transition: top .1s ease-in;
+}
+
+/* Styles for breadcrumbs */
+
+#breadcrumbs {
+  margin-top: 2em;
 }
 
 

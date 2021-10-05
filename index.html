@@ -12,9 +12,21 @@
 
 <body>
   <header class="hero hero-bg is-fullheight">
+    <!-- Skip to block -->
     <div id="skipToMenu" title="Skip to Keyboard Navigation" class="skip-menu">
-      <a href="#navbarMenu">Skip to main content</a>
+      <nav aria-labelledby="skip-menu-section">
+        <ul>
+            <li><a href="#navbarMenu">Skip to navbar menu</a></li>
+            <li><a href="#hero">Skip to hero email sender input</a></li>
+            <li><a href="#about">Skip to about us section</a></li>
+            <li><a href="#three-key-features">Skip to three key features section</a></li>
+            <li><a href="#upcoming-events">Skip to upcoming events section</a></li>
+            <li><a href="#services">Skip to services section</a></li>
+            <li><a href="#photos">Skip to photos section</a></li>
+        </ul>
+    </nav>
     </div>
+    <!-- end of block Skip to -->
     <div class="hero-head">
       <div class="navbar">
         <div class="container">
@@ -28,7 +40,6 @@
               <span></span>
             </span>
           </div>
-
           <nav id="navbarMenu" class="navbar-menu" role="navigation" aria-labelledby="nav">
             <div class="navbar-end">
               <span class="navbar-item">
@@ -68,8 +79,7 @@
         </div>
       </div>
     </div>
-
-    <div class="hero-body">
+    <div id="hero" role="hero" class="hero-body">
       <div class="container has-text-centered">
         <div class="column is-6 is-offset-3">
           <h2 class="title has-text-white">We have web accessibility in mind</h2>
@@ -90,11 +100,28 @@
       </div>
     </div>
   </header>
+      <!-- breadcrumbs -->
+      <div id="breadcrumbs">
+        <nav class="breadcrumb is-centered is-medium" aria-label="Breadcrumb">
+          <ol>
+            <li>
+              <a href="./">MainPage</a>
+            </li>
+            <li>
+              <a href="index.html#about">About Us</a>
+            </li>
+            <li class="is-active">
+              <a href="index.html#details" aria-current="page">We of all trades, master of &ldquo;some&rdquo;</a>
+            </li>
+          </ol>
+        </nav>
+      </div>
+      <!-- end of breadcrumbs -->
 <main>
-  <section class="section" id="about">
+  <section class="section" id="about" role="about">
     <div class="section-heading has-text-centered">
       <h2 class="title is-2">About Us</h2>
-      <h5 class="subtitle is-5">We of all trades, master of "some"</div>
+      <h5 class="subtitle is-5" id="details">We of all trades, master of "some"</div>
       <div class="container">
         <p>Web developers with more than <b>4 years</b> of well-rounded experience with a degree in the
           field of
@@ -164,7 +191,7 @@
           &lt;/html&gt;
           </pre>
       <p>Maecenas eleifend sollicitudin dui, faucibus sollicitudin augue cursus non. Ut finibus eleifend arcu ut vehicula. Mauris eu est maximus est porta condimentum in eu justo. Nulla id iaculis sapien.</p>
-      <table>
+      <table aria-labelledby="some naming for table">
         <caption>Table heading</caption>
         <tr>
           <th scope="col">Header</th>
@@ -207,7 +234,7 @@
     </div>
   </section>
   
-  <div class="hero has-background-grey-light">
+  <div id="three-key-features" role="three-key-features" class="hero has-background-grey-light">
     <div class="container features">
       <div class="section-heading has-text-centered">
         <h2 class="title is-2">Three key features</h2>
@@ -423,7 +450,7 @@
     </div>
   </div>
   
-  <section class="section has-background-grey-lighter">
+  <section id="upcoming-events" role="upcoming-events" class="section has-background-grey-lighter">
     <div class="container has-text-centered">
         <div class="section-heading has-text-centered">
           <h2 class="title is-2">Upcoming events</h2>
@@ -497,7 +524,7 @@
       </div>
     </div>
   </section>
-  <section class="section">
+  <section id="services" role="services" class="section">
     <div class="section-heading has-text-centered">
       <h2 class="title is-2">Services</h2>
       <h5 class="subtitle is-5">What can I do for you?</h5>
@@ -545,7 +572,7 @@
     </div>
   </section>
   
-  <section class="section has-background-grey-lighter">
+  <section id="photos" role="photos" class="section has-background-grey-lighter">
     <div class="container">
       <div class="section-heading has-text-centered">
         <h2 class="title is-2">Photos from past events</h2>
