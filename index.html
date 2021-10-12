@@ -89,7 +89,7 @@
           <form role="form" aria-label="call to action form" class="box">
             <div class="field is-grouped">
               <p class="control is-expanded">
-                <input class="input">
+                <input class="input" aria-label="input text for notify me">
               </p>
               <p class="control">
                 <a class="button is-info" href="#">Notify Me</a>
@@ -121,7 +121,7 @@
       <div class="block notification is-info">
         <p>This is an example of live region. </p>
         <p> The number automatically will update every min</p>
-        <p><span class="tag is-medium is-link live-region" id="live-region" role="region" aria-live="polite">10</span></p>
+        <p><span class="tag is-medium is-link live-region" id="live-region" role="timer" aria-live="polite">10</span></p>
       </div>
       <!-- End of content that is updated everey minute  -->
 <main role="main">
@@ -141,8 +141,8 @@
 
     <div class="content container">
       <h2 class="is-1 title">Hello World</h2>
-      <p>Lorem ipsum<sup><a href="#" target="_blank" rel="noopener" aria-label="lorem ipsum" aria-describedby="open-a-new-window">[1]
-        <span id="open-a-new-window" class="visually-hidden">, will open in a new window</span>
+      <p>Lorem ipsum<sup><a href="#" target="_blank" rel="noopener" aria-label="lorem ipsum" aria-describedby="open-a-new-window1">[1]
+        <span id="open-a-new-window1" class="visually-hidden">, will open in a new window</span>
           <i aria-hidden="true" class="fas fa-external-link-alt"></i>
       </a></sup> dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub<sub>script</sub> works as well!</p>
       <h2 class="is-2 title">Second level</h2>
@@ -154,8 +154,8 @@
         <li>- Ut non enim metus.</li>
       </ul>
       <h3 class="is-3 title">Third level</h3>
-      <p>Quisque ante lacus, malesuada ac auctor vitae, congue <a href="#" target="_blank" rel="noopener" aria-label="lorem ipsum" aria-describedby="open-a-new-window">non ante
-        <span id="open-a-new-window" class="visually-hidden">, will open in a new window</span>
+      <p>Quisque ante lacus, malesuada ac auctor vitae, congue <a href="#" target="_blank" rel="noopener" aria-label="lorem ipsum" aria-describedby="open-a-new-window2">non ante
+        <span id="open-a-new-window2" class="visually-hidden">, will open in a new window</span>
           <i aria-hidden="true" class="fas fa-external-link-alt"></i>
       </a>. Phasellus lacus ex, semper ac tortor nec, fringilla condimentum orci. Fusce eu rutrum tellus.</p>
       <ol class="ol-list">
@@ -972,8 +972,8 @@
           <div class="control">
             <label class="checkbox" for="i-agree">
               <input type="checkbox" id="i-agree" name="suggestion">
-              I agree to the <a href="#" target="_blank" rel="noopener" aria-label="terms and conditions" aria-describedby="open-a-new-window">terms and conditions
-                <span id="open-a-new-window" class="visually-hidden">, will open in a new window</span>
+              I agree to the <a href="#" target="_blank" rel="noopener" aria-label="terms and conditions" aria-describedby="open-a-new-window3">terms and conditions
+                <span id="open-a-new-window3" class="visually-hidden">, will open in a new window</span>
                 <i aria-hidden="true" class="fas fa-external-link-alt"></i>
               </a>
             </label>
@@ -981,13 +981,13 @@
         </div>
   
         <div class="field">
-          <div class="control">
-            <label class="radio" for="yes">
-              <input type="radio" id="yes" name="question">
+          <div class="control" role="radiogroup">
+            <label class="radio" for="yes" >
+              <input type="radio" id="yes" name="question" role="radio" aria-checked="false">
               Yes
             </label>
-            <label class="radio"  for="no">
-              <input type="radio" id="no" name="question">
+            <label class="radio"  for="no" >
+              <input type="radio" id="no" name="question" role="radio" aria-checked="false">
               No
             </label>
           </div>
@@ -1155,27 +1155,27 @@
 
       <div class="content has-text-centered">
         <div class="soc">
-          <a href="https://github.com/" target="_blank" rel="noopener" aria-label="Github" aria-describedby="open-a-new-window">
+          <a href="https://github.com/" target="_blank" rel="noopener" aria-label="Github" aria-describedby="open-a-new-window4">
             <i aria-hidden="true" focusable="false" class="fab fa-github-alt fa-2x"></i>
-            <span id="open-a-new-window" class="visually-hidden">, will open in a new window</span>
+            <span id="open-a-new-window4" class="visually-hidden">, will open in a new window</span>
           </a>
-          <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="Youtube" aria-describedby="open-a-new-window">
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="Youtube" aria-describedby="open-a-new-window5">
             <i aria-hidden="true" class="fab fa-youtube fa-2x"></i>
-            <span id="open-a-new-window" class="visually-hidden">, will open in a new window</span>
+            <span id="open-a-new-window5" class="visually-hidden">, will open in a new window</span>
           </a>
-          <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook" aria-describedby="open-a-new-window">
+          <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook" aria-describedby="open-a-new-window6">
             <i aria-hidden="true" class="fab fa-facebook fa-2x"></i>
-            <span id="open-a-new-window" class="visually-hidden">, will open in a new window</span>
+            <span id="open-a-new-window6" class="visually-hidden">, will open in a new window</span>
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter" aria-describedby="open-a-new-window">
+          <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter" aria-describedby="open-a-new-window7">
             <i aria-hidden="true" class="fab fa-twitter fa-2x"></i>
-            <span id="open-a-new-window" class="visually-hidden">, will open in a new window</span>
+            <span id="open-a-new-window7" class="visually-hidden">, will open in a new window</span>
           </a>
         </div>
         <p>The source code is licensed 
-          <a href="http://opensource.org/licenses/mit-license.php" target="_blank" rel="noopener" aria-label="License of MIT" aria-describedby="open-a-new-window">
+          <a href="http://opensource.org/licenses/mit-license.php" target="_blank" rel="noopener" aria-label="License of MIT" aria-describedby="open-a-new-window8">
           MIT
-          <span id="open-a-new-window" class="visually-hidden">, will open in a new window</span>
+          <span id="open-a-new-window8" class="visually-hidden">, will open in a new window</span>
           <i aria-hidden="true" class="fas fa-external-link-alt"></i>
         </a>.
       </p>
