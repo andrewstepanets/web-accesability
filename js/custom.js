@@ -8,7 +8,6 @@
 
   const skipLink = document.querySelector(".js-skip-link");
   const skipList = document.querySelector(".js-skip-list");
-  const skipListItem = document.querySelectorAll(".js-skip-list li a");
 
   skipLink.addEventListener("click", function () {
     skipLink.classList.toggle("is-active");
