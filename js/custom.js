@@ -5,6 +5,18 @@
     burger.classList.toggle("is-active");
     menu.classList.toggle("is-active");
   });
+
+  const skipLink = document.querySelector(".js-skip-link");
+  const skipList = document.querySelector(".js-skip-list");
+
+  skipLink.addEventListener("click", function () {
+    skipLink.classList.toggle("is-active");
+    skipList.classList.toggle("is-active");
+  });
+  skipList.addEventListener("click", function () {
+    skipLink.classList.remove("is-active");
+    skipList.classList.remove("is-active");
+  });
 })();
 
 document.querySelectorAll("#nav li").forEach(function (navEl) {

@@ -12,40 +12,22 @@
 
 <body>
   <header class="hero hero-bg is-fullheight">
-    <!-- Skip to block -->
-        <div id="skipToMenu" title="Skip to Keyboard Navigation" class="dropdown">
-          <div class="dropdown-trigger">
-            <button class="button" aria-haspopup="true" aria-expanded="true" aria-controls="dropdown-menu" accesskey="0">
-              <span>Skip To ...</span>
-              <span class="icon is-small">
-                <i class="fas fa-angle-down" aria-hidden="true"></i>
-              </span>
-            </button>
-          </div>
-          <div class="dropdown-menu" id="dropdown-menu" role="menu">
-            <div class="dropdown-content">
-              <a href="#firstMenuItem" class="dropdown-item">
-                Navbar menu
-              </a>
-              <a href="#about" class="dropdown-item">
-                About us
-              </a>
-              <a href="#three-key-features" class="dropdown-item">
-                Three key features
-              </a>
-              <a href="#upcoming-events" class="dropdown-item">
-                Upcoming Events
-              </a>
-              <a href="#services" class="dropdown-item">
-                Services
-              </a>
-              <a href="#photos" class="dropdown-item">
-                Photos
-              </a>
-            </div>  
-          </div>
+        <!-- Skip to block -->
+        <div id="skipToMenu" title="Skip to Keyboard Navigation" class="skip-menu">
+          <nav role="navigation" aria-labelledby="skipToMenu">
+            <a tabindex="0" href="#" class="skip-link button is-info js-skip-link" aria-haspopup="true" aria-owns="skip-menu">Skip to ...</a>
+            <ul id="skip-menu" aria-label="Skip to" class="skip-to-list js-skip-list" role="menu">
+                <li><a href="#firstMenuItem">Skip to navbar menu</a></li>
+                <li><a href="#hero">Skip to hero email sender input</a></li>
+                <li><a href="#about">Skip to about us section</a></li>
+                <li><a href="#three-key-features">Skip to three key features section</a></li>
+                <li><a href="#upcoming-events">Skip to upcoming events section</a></li>
+                <li><a href="#services">Skip to services section</a></li>
+                <li><a href="#photos">Skip to photos section</a></li>
+            </ul>
+        </nav>
         </div>
-    <!-- end of block Skip to -->
+        <!-- end of block Skip to -->
     <div class="hero-head">
       <div class="navbar">
         <div class="container">
