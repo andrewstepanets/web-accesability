@@ -13,19 +13,38 @@
 <body>
   <header class="hero hero-bg is-fullheight">
     <!-- Skip to block -->
-    <div id="skipToMenu" title="Skip to Keyboard Navigation" class="skip-menu">
-      <nav aria-labelledby="skip-menu-section">
-        <ul>
-            <li><a href="#navbarMenu">Skip to navbar menu</a></li>
-            <li><a href="#hero">Skip to hero email sender input</a></li>
-            <li><a href="#about">Skip to about us section</a></li>
-            <li><a href="#three-key-features">Skip to three key features section</a></li>
-            <li><a href="#upcoming-events">Skip to upcoming events section</a></li>
-            <li><a href="#services">Skip to services section</a></li>
-            <li><a href="#photos">Skip to photos section</a></li>
-        </ul>
-    </nav>
-    </div>
+        <div id="skipToMenu" title="Skip to Keyboard Navigation" class="dropdown">
+          <div class="dropdown-trigger">
+            <button class="button" aria-haspopup="true" aria-expanded="true" aria-controls="dropdown-menu" accesskey="0">
+              <span>Skip To ...</span>
+              <span class="icon is-small">
+                <i class="fas fa-angle-down" aria-hidden="true"></i>
+              </span>
+            </button>
+          </div>
+          <div class="dropdown-menu" id="dropdown-menu" role="menu">
+            <div class="dropdown-content">
+              <a href="#firstMenuItem" class="dropdown-item">
+                Navbar menu
+              </a>
+              <a href="#about" class="dropdown-item">
+                About us
+              </a>
+              <a href="#three-key-features" class="dropdown-item">
+                Three key features
+              </a>
+              <a href="#upcoming-events" class="dropdown-item">
+                Upcoming Events
+              </a>
+              <a href="#services" class="dropdown-item">
+                Services
+              </a>
+              <a href="#photos" class="dropdown-item">
+                Photos
+              </a>
+            </div>  
+          </div>
+        </div>
     <!-- end of block Skip to -->
     <div class="hero-head">
       <div class="navbar">
@@ -43,7 +62,7 @@
           <nav id="navbarMenu" class="navbar-menu" role="navigation" aria-labelledby="nav">
             <div class="navbar-end">
               <span class="navbar-item">
-                <a class="button is-white is-outlined" href="#">
+                <a class="button is-white is-outlined" href="#" id="firstMenuItem">
                   <span class="icon">
                     <i aria-hidden="true" class="fa fa-home"></i>
                   </span>
@@ -133,9 +152,9 @@
     </div>
 
     <div class="content container">
-      <h2 class="is-1 title">Hello World</h2>
-      <p>Lorem ipsum<sup><a href="#" target="_blank" rel="noopener" aria-label="lorem ipsum" aria-describedby="open-a-new-window">[1]
-        <span id="open-a-new-window" class="visually-hidden">, will open in a new window</span>
+      <h1 class="is-1 title">Hello World</h1>
+      <p>Lorem ipsum<sup><a href="#" target="_blank" rel="noopener" aria-label="lorem ipsum" aria-describedby="open-a-new-window1">[1]
+        <span id="open-a-new-window1" class="visually-hidden">, will open in a new window</span>
           <i aria-hidden="true" class="fas fa-external-link-alt"></i>
       </a></sup> dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub<sub>script</sub> works as well!</p>
       <h2 class="is-2 title">Second level</h2>
@@ -147,8 +166,8 @@
         <li>- Ut non enim metus.</li>
       </ul>
       <h3 class="is-3 title">Third level</h3>
-      <p>Quisque ante lacus, malesuada ac auctor vitae, congue <a href="#" target="_blank" rel="noopener" aria-label="lorem ipsum" aria-describedby="open-a-new-window">non ante
-        <span id="open-a-new-window" class="visually-hidden">, will open in a new window</span>
+      <p>Quisque ante lacus, malesuada ac auctor vitae, congue <a href="#" target="_blank" rel="noopener" aria-label="lorem ipsum" aria-describedby="open-a-new-window2">non ante
+        <span id="open-a-new-window2" class="visually-hidden">, will open in a new window</span>
           <i aria-hidden="true" class="fas fa-external-link-alt"></i>
       </a>. Phasellus lacus ex, semper ac tortor nec, fringilla condimentum orci. Fusce eu rutrum tellus.</p>
       <ol class="ol-list">
@@ -965,8 +984,8 @@
           <div class="control">
             <label class="checkbox" for="i-agree">
               <input type="checkbox" id="i-agree" name="suggestion">
-              I agree to the <a href="#" target="_blank" rel="noopener" aria-label="terms and conditions" aria-describedby="open-a-new-window">terms and conditions
-                <span id="open-a-new-window" class="visually-hidden">, will open in a new window</span>
+              I agree to the <a href="#" target="_blank" rel="noopener" aria-label="terms and conditions" aria-describedby="open-a-new-window3">terms and conditions
+                <span id="open-a-new-window3" class="visually-hidden">, will open in a new window</span>
                 <i aria-hidden="true" class="fas fa-external-link-alt"></i>
               </a>
             </label>
@@ -1148,27 +1167,27 @@
 
       <div class="content has-text-centered">
         <div class="soc">
-          <a href="https://github.com/" target="_blank" rel="noopener" aria-label="Github" aria-describedby="open-a-new-window">
+          <a href="https://github.com/" target="_blank" rel="noopener" aria-label="Github" aria-describedby="open-a-new-window4">
             <i aria-hidden="true" focusable="false" class="fab fa-github-alt fa-2x"></i>
-            <span id="open-a-new-window" class="visually-hidden">, will open in a new window</span>
+            <span id="open-a-new-window4" class="visually-hidden">, will open in a new window</span>
           </a>
-          <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="Youtube" aria-describedby="open-a-new-window">
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="Youtube" aria-describedby="open-a-new-window5">
             <i aria-hidden="true" class="fab fa-youtube fa-2x"></i>
-            <span id="open-a-new-window" class="visually-hidden">, will open in a new window</span>
+            <span id="open-a-new-window5" class="visually-hidden">, will open in a new window</span>
           </a>
-          <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook" aria-describedby="open-a-new-window">
+          <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook" aria-describedby="open-a-new-window6">
             <i aria-hidden="true" class="fab fa-facebook fa-2x"></i>
-            <span id="open-a-new-window" class="visually-hidden">, will open in a new window</span>
+            <span id="open-a-new-window6" class="visually-hidden">, will open in a new window</span>
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter" aria-describedby="open-a-new-window">
+          <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter" aria-describedby="open-a-new-window7">
             <i aria-hidden="true" class="fab fa-twitter fa-2x"></i>
-            <span id="open-a-new-window" class="visually-hidden">, will open in a new window</span>
+            <span id="open-a-new-window7" class="visually-hidden">, will open in a new window</span>
           </a>
         </div>
         <p>The source code is licensed 
-          <a href="http://opensource.org/licenses/mit-license.php" target="_blank" rel="noopener" aria-label="License of MIT" aria-describedby="open-a-new-window">
+          <a href="http://opensource.org/licenses/mit-license.php" target="_blank" rel="noopener" aria-label="License of MIT" aria-describedby="open-a-new-window8">
           MIT
-          <span id="open-a-new-window" class="visually-hidden">, will open in a new window</span>
+          <span id="open-a-new-window8" class="visually-hidden">, will open in a new window</span>
           <i aria-hidden="true" class="fas fa-external-link-alt"></i>
         </a>.
       </p>
@@ -1231,6 +1250,6 @@
   </div>
 
   <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
-  <script async src="js/custom.js"></script>
+  <script async src="./js/custom.js"></script>
 </body>
 </html>
