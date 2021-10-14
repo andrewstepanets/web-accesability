@@ -1,14 +1,28 @@
-(function() {
+(function () {
   var burger = document.querySelector(".burger");
   var menu = document.querySelector("#" + burger.dataset.target);
-  burger.addEventListener("click", function() {
+  burger.addEventListener("click", function () {
     burger.classList.toggle("is-active");
     menu.classList.toggle("is-active");
   });
+
+  const skipLink = document.querySelector(".js-skip-link");
+  const skipList = document.querySelector(".js-skip-list");
+  const skipListItem = document.querySelectorAll(".js-skip-list li a");
+
+  skipLink.addEventListener("click", function () {
+    skipLink.classList.toggle("is-active");
+    skipList.classList.toggle("is-active");
+  });
+
+  skipList.addEventListener("click", function () {
+    skipLink.classList.remove("is-active");
+    skipList.classList.remove("is-active");
+  });
 })();
 
-document.querySelectorAll("#nav li").forEach(function(navEl) {
-  navEl.onclick = function() {
+document.querySelectorAll("#nav li").forEach(function (navEl) {
+  navEl.onclick = function () {
     toggleTab(this.id, this.dataset.target);
   };
 });
@@ -16,7 +30,7 @@ document.querySelectorAll("#nav li").forEach(function(navEl) {
 function toggleTab(selectedNav, targetId) {
   var navEls = document.querySelectorAll("#nav li");
 
-  navEls.forEach(function(navEl) {
+  navEls.forEach(function (navEl) {
     if (navEl.id == selectedNav) {
       navEl.classList.add("is-active");
     } else {
@@ -28,7 +42,7 @@ function toggleTab(selectedNav, targetId) {
 
   var tabs = document.querySelectorAll(".tab-pane");
 
-  tabs.forEach(function(tab) {
+  tabs.forEach(function (tab) {
     if (tab.id == targetId) {
       tab.style.display = "block";
     } else {

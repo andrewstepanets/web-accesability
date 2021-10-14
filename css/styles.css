@@ -286,26 +286,56 @@ input.is-success, .textarea.is-success {
 
 /* skip links */
 
-#skipToMenu a {
-    padding: 6px;
-    position: absolute;
-    top: -40px;
-    left: 0px;
-    color: white;
-    border-right: 1px solid white;
-    border-bottom: 1px solid white;
-    border-bottom-right-radius: 8px;
-    background: #1C51A6;
-    transition: top 1s ease-out;
-    z-index: 100;
+.skip-link {
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  left: 0px;
+  color: white;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  border-bottom-right-radius: 8px;
+  background: #1C51A6;
+  transition: top 1s ease-out;
+  z-index: 100;
 }
 
-#skipToMenu a:focus {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    outline-color: transparent;
-    transition: top .1s ease-in;
+.skip-link:focus, .skip-link.is-active {
+  top: 0;
+  outline-color: transparent;
+  transition: top .1s ease-in;
+}
+
+.skip-link.is-info:focus {
+  border: 2px solid white;
+}
+
+.skip-link:hover {
+  color: white;
+}
+
+.skip-to-list.is-active {
+  top: 40px;
+  display: block;
+}
+
+.skip-to-list {
+  display: none;
+  padding: 5px 10px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  float: left;
+  min-width: 160px;
+  margin: 2px 0 0;
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-right-width: 2px;
+  border-bottom-width: 2px;
+  border-radius: 6px;
+  background-clip: padding-box;
 }
 
 /* Styles for breadcrumbs */
