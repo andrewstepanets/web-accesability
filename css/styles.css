@@ -210,7 +210,7 @@ a.box:focus,
 .control input[type='radio']:focus,
 .control .button.is-link:focus,
 .control .button.is-text:focus,
-.button.is-info:focus:not(:active)  {
+.button.is-info:focus:not(:active) {
   outline: 0;
   border-radius: 2px;
   box-shadow: 0 0 2px 1.5px #bc6e6e, 0 0 3px 3px #f279dd;
