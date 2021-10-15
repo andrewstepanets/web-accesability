@@ -13,6 +13,7 @@
     skipLink.classList.toggle("is-active");
     skipList.classList.toggle("is-active");
   });
+
   skipList.addEventListener("click", function () {
     skipLink.classList.remove("is-active");
     skipList.classList.remove("is-active");
@@ -48,9 +49,3 @@ function toggleTab(selectedNav, targetId) {
     }
   });
 }
-
-const dropdown = document.querySelector(".dropdown");
-dropdown.addEventListener("click", function (event) {
-  event.stopPropagation();
-  dropdown.classList.toggle("is-active");
-});
