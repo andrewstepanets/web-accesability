@@ -316,18 +316,6 @@ input.is-success, .textarea.is-success {
   color: white;
 }
 
-.skip-link .caret {
-  display: inline-block;
-  margin: 0 5px;
-  width: 0;
-  height: 0;
-  vertical-align: top;
-  border-top: 4px solid #fff;
-  border-right: 4px solid transparent;
-  border-left: 4px solid transparent;
-  content: '';
-}
-
 .skip-to-list.is-active {
   top: 40px;
   display: block;
