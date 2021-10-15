@@ -322,14 +322,14 @@ input.is-success, .textarea.is-success {
 }
 
 .skip-to-list {
+  display: none;
+  padding: 5px 10px;
   position: absolute;
   top: 100%;
   left: 0;
   z-index: 1000;
-  display: none;
   float: left;
   min-width: 160px;
-  padding: 5px 10px;
   margin: 2px 0 0;
   list-style: none;
   background-color: #fff;
