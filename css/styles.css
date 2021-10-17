@@ -86,6 +86,10 @@
   background-color: rgb(63, 63, 63);
 }
 
+#appmenu > li:hover > ul {
+  display:block;
+}
+
 #appmenu > li[aria-expanded="true"] > ul {
 	display:block;
 }
