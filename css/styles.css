@@ -12,15 +12,94 @@
   padding: 2rem;
 }
 .tab-pane {
-  display: none;
-}
-.tab-pane.is-active {
   display: block;
   position: relative;
 }
-.is-active {
-  display: initial;
+.tab-pane[hidden] {
+  display: none;
 }
+
+.tabs.is-centered .tablist {
+  justify-content: center;
+}
+.hero .tabs .tablist {
+  border-bottom: none;
+  display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    align-items: center;
+}
+
+.hero.is-info .tabs.is-boxed button {
+  color: white;
+  background: transparent;
+  border: none;
+  border-radius: 4px 4px 0 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -1px;
+  padding: 1em 2em;
+  vertical-align: top;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.hero.is-info .tabs.is-boxed button.is-active, .hero.is-info .tabs.is-boxed button.is-active:hover, .hero.is-info .tabs.is-toggle li.is-active button, .hero.is-info .tabs.is-toggle li.is-active button:hover {
+  background-color: #fff;
+  border-color: #fff;
+  color: #094E7B;
+  border: 1px solid transparent;
+
+}
+
+
+/* menu */
+
+#appmenu > li > ul {
+	display: none;
+	position:absolute;
+	left:0;
+	right:0;
+	top:100%;
+	padding: 20px;
+	margin:0;
+  border-radius: 5px;
+	background-color: rgb(196, 196, 196);
+	width: 200%;
+	text-align: left;
+}
+#appmenu > li > ul > li {
+  margin-bottom: 10px;
+}
+#appmenu > li > ul > li > a {
+  color: rgb(63, 63, 63);
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
+#appmenu > li > ul > li > a:hover {
+  color: #094E7B;
+  border-bottom: 1px solid #094E7B;
+}
+
+#appmenu .navbar-divider {
+  background-color: rgb(63, 63, 63);
+}
+
+#appmenu > li:hover > ul {
+  display:block;
+}
+
+#appmenu > li[aria-expanded="true"] > ul {
+	display:block;
+}
+
+#appmenu > li:focus .button.is-white.is-outlined {
+  background-color: #fff;
+  border-color: #fff;
+  color: #0a0a0a;
+}
+/*  */
 
 .cent {
   display: block;
@@ -210,7 +289,8 @@ a.box:focus,
 .control input[type='radio']:focus,
 .control .button.is-link:focus,
 .control .button.is-text:focus,
-.button.is-info:focus:not(:active) {
+.button.is-info:focus:not(:active),
+[role="tab"]:focus-visible {
   outline: 0;
   border-radius: 2px;
   box-shadow: 0 0 2px 1.5px #bc6e6e, 0 0 3px 3px #f279dd;
@@ -233,9 +313,7 @@ a {
 .subtitle {
   color: #262626; 
 }
-.hero.is-info .tabs.is-boxed li.is-active a, .hero.is-info .tabs.is-boxed li.is-active a:hover {
-  color: #094E7B;
-}
+
 .tag:not(body).is-danger {
   background-color: #B30024;
 }
