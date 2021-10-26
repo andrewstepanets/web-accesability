@@ -87,19 +87,22 @@
                   <span>Home</span>
                 </a>
               </li>
-              <li role="menuitem" aria-haspopup="true" class="navbar-item">
+              <li role="menuitem" aria-haspopup="true" class="navbar-item" aria-controls='subMenu'>
                 <a class="button is-white is-outlined" href="#" >
                   <span class="icon">
                     <i aria-hidden="true" class="fab fa-superpowers"></i>
                   </span>
                   <span>Examples</span>
+                  <span class="icon is-small">
+                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                  </span>
                 </a>
-                <ul role="menu" class="navbar-end">
+                <ul role="menu" class="navbar-end" id='subMenu'>
                   <li role="menuitem"><a href="#" class="is-white">Administration</a></li>
                   <li role="menuitem"><a href="#" class="is-white">Team Settings</a></li>
                   <li role="menuitem"><a href="#" class="is-white">Manage Your Team</a></li>
                   <li role="menuitem"><a href="#" class="is-white">Invitation</a></li>
-                  <li role="menuitem"><hr class="navbar-divider"></li>
+                  <li role="separator"><hr class="navbar-divider"></li>
                   <li role="menuitem"><a href="#" class="is-white">Authentication</a></li>
                 </ul>
               </li>

@@ -20,6 +20,7 @@
     right: 39,
     down: 40,
     delete: 46,
+    space: 32,
   };
 
   // Add or substract depending on key pressed
@@ -28,6 +29,7 @@
     38: -1,
     39: 1,
     40: 1,
+    32: 1,
   };
 
   // Bind listeners
@@ -69,6 +71,7 @@
       // because we need to prevent page scroll >:)
       case keys.up:
       case keys.down:
+      case keys.space:
         determineOrientation(event);
         break;
     }
@@ -81,6 +84,7 @@
     switch (key) {
       case keys.left:
       case keys.right:
+      case keys.space:
         determineOrientation(event);
         break;
       case keys.delete:
@@ -103,7 +107,7 @@
         proceed = true;
       }
     } else {
-      if (key === keys.left || key === keys.right) {
+      if (key === keys.left || key === keys.right || key === keys.space) {
         proceed = true;
       }
     }
@@ -129,6 +133,8 @@
         } else if (pressed === keys.left || pressed === keys.up) {
           focusLastTab();
         } else if (pressed === keys.right || pressed == keys.down) {
+          focusFirstTab();
+        } else if (pressed === keys.space || pressed == keys.down) {
           focusFirstTab();
         }
       }
